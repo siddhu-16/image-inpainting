@@ -1,0 +1,258 @@
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  background-color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+header nav ul li a {
+  margin-right: 20px;
+  color: #000;
+  font-weight: 300px;
+}
+
+header nav a:hover {
+
+  color: black;
+  font-weight: 300px;
+
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+
+#hero {
+  width: 100%;
+  height: 100vh;
+
+}
+
+
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: black;
+}
+
+#hero h2 {
+  color: black;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+
+
+
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+    text-align: center;
+  }
+
+
+
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img source {
+    width: 50%;
+  }
+}
+
+video {
+
+  display: block;
+}
+.video-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .hero-img source {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img source {
+    width: 80%;
+  }
+
+  #hero .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+
+
+
+.container{
+  margin-top: 50px;
+}
+
+.my-button {
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  align-items: center;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 20px 20px;
+  cursor: pointer;
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+}
+
+.my-button:hover {
+  background-color: white;
+  color: #000;
+  border: #000 solid 1px;
+}
+
+#imageUploader::-webkit-file-upload-button {
+  display: none;
+}
+
+
+.my-container {
+  overflow: auto;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+canvas {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid #000;
+  border-radius: 8px;
+  min-height: 50%;
+  min-width: 50%;
+  background: url('/static/resources/image-placeholder.svg');
+  background-position: center center;
+}
+
+.my-container .input-file-container {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.my-container .output-file-container {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+
+
+
+
+
+
+.container{
+  margin-top: 50px;
+}
+footer {
+
+  padding: 20px;
+  text-align: center;
+}
+
+#loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: none;
+  /* Initially hide the loader */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* Ensure the loader is on top of other content */
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid red;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+.row .options {
+  list-style: none;
+  margin: 10px 0 0 5px;
+}
+
+
+
+
+.option #size-slider {
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+}
